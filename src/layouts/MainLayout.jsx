@@ -7,7 +7,7 @@ const MainLayout = () => {
     <>
       <Navbar />
 
-      <main style={{ minHeight: "80vh", padding: "1rem" }}>
+      <main>
         <Outlet />
       </main>
 

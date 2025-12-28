@@ -1,41 +1,41 @@
+import heroimg from "./assets/hero-img.svg";
 const Hero = () => {
   return (
-    <section className="h-screen w-full bg-gradient-to-br from-slate-100 to-slate-300">
+    <section className="h-screen p-4 w-full bg-[#000000] from-slate-100 to-slate-300">
       <div className=" mx-auto h-full flex items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
-          
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center w-full">
           {/* Text Section */}
           <div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Build Something{" "}
-              <span className="text-indigo-600">Beautiful</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+              Your Next Car Is Just a Click Away
             </h1>
 
-            <p className="text-gray-600 text-lg md:text-xl mb-10 max-w-lg">
-              Create modern, fast, and visually stunning web experiences with
-              React and Tailwind CSS.
+            <p className="text-white text-lg md:text-xl mb-10 max-w-lg">
+              Search thousands of real listings from verified sellers. Compare
+              prices, check car history, and connect instantly. Whether you're
+              buying or selling, our platform makes every step effortless and
+              secure.
             </p>
 
             <div className="flex gap-4">
-              <button className="px-8 py-4 rounded-full bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-lg">
-                Get Started
+              <button className="px-8 py-4 rounded-md bg-primary text-black font-medium transition shadow-lg">
+                Post an Ad
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
-                Learn More
+              <button className="px-8 py-4 bg-[#000000] rounded-md border border-gray-300 text-white transition">
+                Sell/Buy a car
               </button>
             </div>
           </div>
 
           {/* Image Section */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end h-full">
             <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+              src={heroimg}
               alt="Hero"
-              className="w-full max-w-xl rounded-3xl shadow-2xl object-cover"
+              className="w-full h-full"
             />
           </div>
-
         </div>
       </div>
     </section>
