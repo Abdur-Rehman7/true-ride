@@ -51,7 +51,7 @@ const SearchFilter = () => {
 
   return (
     <div className="relative -mt-12 z-20">
-      <div className="mx-auto w-[95%] rounded-xl border bg-white px-4 py-6 md:px-6 md:py-8 shadow-lg">
+      <div className="mx-auto rounded-xl border bg-white px-4 py-6 md:px-6 md:py-8 shadow-lg">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-7 items-end">
           <SelectInput htmlFor="Type" label="Type" options={typeOptions} />
           <SelectInput htmlFor="Make" label="Make" options={makeOptions} />
