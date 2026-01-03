@@ -1,40 +1,26 @@
-import img from "./assets/featured-img.svg";
-import heart from "./assets/heart.svg";
-import gallery from "./assets/gallery.svg";
-import arrow from "./assets/arrow-left-right.svg";
-import play from "./assets/play.svg";
+import FeaturedListingCard from "./FeaturedListingCard";
+import { IoMdArrowBack } from "react-icons/io";
+import { IoMdArrowForward } from "react-icons/io";
+
 const FeaturedListing = () => {
   return (
     <>
       <div>
         <p className="text-center text-[44px] font-bold">Featured Listing</p>
-        <div>
-          <div className="w-[400px] bg-white">
-            <div className="relative">
-              <img src={img} className="rounded-[12px]" />
-
-              <p className="bg-white absolute top-2 left-2 py-[8px] px-[16px] rounded-[4px] font-semibold">
-                Fair Deal
-              </p>
-              <div className="flex flex-col gap-2 absolute top-2 right-6">
-                <div className="w-[32px] h-[32px] bg-[#393939] rounded-full flex items-center justify-center">
-                  <img src={heart} alt="heart" />
-                </div>
-
-                <div className="w-[32px] h-[32px] bg-[#393939] rounded-full flex items-center justify-center">
-                  <img src={gallery} alt="gallery" />
-                </div>
-
-                <div className="w-[32px] h-[32px] bg-[#393939] rounded-full flex items-center justify-center">
-                  <img src={arrow} alt="arrow" />
-                </div>
-              </div>
-
-              <div className="absolute bottom-2 left-2">
-                <img src={play} />
-                
-              </div>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <FeaturedListingCard />
+          <FeaturedListingCard />
+          <FeaturedListingCard />
+          <FeaturedListingCard />
+          <FeaturedListingCard />
+          <FeaturedListingCard />
+        </div>
+        <div className="flex gap-2 items-center justify-center mt-4">
+          <div className="w-[50px] h-[50px] bg-[#F5F6F7] flex items-center justify-center hover:cursor-pointer rounded-[10px]">
+            <IoMdArrowBack className="text-xl text-[#9A9EA7]" size={20} />
+          </div>
+          <div className="w-[50px] h-[50px] bg-primary flex items-center justify-center hover:cursor-pointer rounded-[10px]">
+            <IoMdArrowForward className="text-xl" size={20} />
           </div>
         </div>
       </div>
