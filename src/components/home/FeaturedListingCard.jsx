@@ -7,7 +7,7 @@ import { IoStar } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import diesel from "./assets/diesel.svg";
 import odometer from "./assets/odometer.svg";
-import horsepower from "./assets/horsepower.svg";
+import hp from "./assets/hp.svg"
 import suv from "./assets/suv.svg";
 import color from "./assets/color.svg";
 
