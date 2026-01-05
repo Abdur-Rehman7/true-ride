@@ -6,7 +6,7 @@ import car3 from "./assets/car-3.svg";
 const PopularModelSection = () => {
   return (
     <>
-      <section className="w-full h-auto bg-[#1E1D18] my-10 py-10">
+      <section className="w-full h-auto rounded-lg bg-[#1E1D18] my-10 py-10">
         <div className="text-white text-[44px] text-center font-semibold">
           Popular Car Models
         </div>
