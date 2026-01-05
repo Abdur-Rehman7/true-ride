@@ -3,7 +3,8 @@ import SearchFilter from "../components/home/SearchFilter";
 import FeaturedListing from "../components/home/FeaturedListing";
 import PopularModelSection from "../components/home/PopularModelSection";
 import ServicesDetail from "../components/home/ServicesDetail";
-
+import SignupSection from "../components/home/SignupSection";
+import FindCar from "../components/home/FindCar";
 export default function Home() {
   return (
     <div>
@@ -14,6 +15,8 @@ export default function Home() {
       </div>
       <PopularModelSection />
       <ServicesDetail />
+      <SignupSection />
+      <FindCar />
     </div>
   );
 }

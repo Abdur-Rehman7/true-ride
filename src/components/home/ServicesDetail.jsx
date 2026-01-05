@@ -30,7 +30,7 @@ const ServicesDetail = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-3 w-[45%] gap-2">
+        <div className=" grid grid-cols-3 w-[45%] gap-2 mt-4 ml-6">
           <div className="text-center  bg-[#FAFAFA] rounded-[8px] ">
             <p className="text-[40px] font-semibold">124k+</p>
             <p className="text-[14px] text-[#9C9C9C]">Active Users</p>
