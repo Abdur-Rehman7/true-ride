@@ -7,7 +7,7 @@ import { IoStar } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import diesel from "./assets/diesel.svg";
 import odometer from "./assets/odometer.svg";
-import hp from "./assets/hp.svg"
+import hp from "./assets/hp.svg";
 import suv from "./assets/suv.svg";
 import color from "./assets/color.svg";
 
@@ -82,7 +82,7 @@ const FeaturedListingCard = () => {
             </span>
 
             <span className="flex items-center justify-center gap-2 text-[#232323] text-[18px]">
-              <img src={horsepower} alt="horsepower" />
+              <img src={hp} alt="horsepower" />
               1800 cc
             </span>
 
