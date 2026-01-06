@@ -16,7 +16,7 @@ const PopularBrand = () => {
         <div className="text-[44px] text-black text-center font-semibold">
           Popular Brands
         </div>
-        <div className="flex justify-between mt-4">
+        <div className="flex justify-between my-6">
           <img src={logo1} alt="opel car" />
           <img src={logo2} alt="Audi car" />
           <img src={logo3} alt="Benz mersedz car" />
