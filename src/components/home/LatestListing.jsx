@@ -8,7 +8,7 @@ const LatestListing = () => {
         <div className="text-[44px] font-semibold text-center">
           Latest Listing
         </div>
-        <div className="flex justify-between">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <FeaturedListingCard />
           <FeaturedListingCard />
           <FeaturedListingCard />
