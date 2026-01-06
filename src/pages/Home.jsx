@@ -6,6 +6,7 @@ import ServicesDetail from "../components/home/ServicesDetail";
 import SignupSection from "../components/home/SignupSection";
 import FindCar from "../components/home/FindCar";
 import Testimonial from "../components/home/Testimonial";
+import PopularBrand from "../components/home/PopularBrand";
 export default function Home() {
   return (
     <div>
@@ -19,6 +20,7 @@ export default function Home() {
       <SignupSection />
       <FindCar />
       <Testimonial />
+      <PopularBrand />
     </div>
   );
 }
