@@ -9,6 +9,7 @@ import Testimonial from "../components/home/Testimonial";
 import PopularBrand from "../components/home/PopularBrand";
 import LatestListing from "../components/home/LatestListing";
 import SubscribeSection from "../components/home/SubscribeSection";
+import BlogSection from "../components/home/BlogSection";
 export default function Home() {
   return (
     <div>
@@ -27,6 +28,9 @@ export default function Home() {
         <LatestListing />
       </div>
       <SubscribeSection />
+      <div className="w-[95%] mx-auto">
+        <BlogSection />
+      </div>
     </div>
   );
 }
