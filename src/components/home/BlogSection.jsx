@@ -31,7 +31,7 @@ const BlogSection = () => {
 
   return (
     <>
-      <div>
+      <div className="my-10">
         <div className="text-[44px] font-semibold text-center my-10">
           Read Our Latest Articles
         </div>

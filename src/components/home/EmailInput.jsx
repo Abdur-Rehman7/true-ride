@@ -1,12 +1,12 @@
-import arrowicon from "./assets/subscription-arrow.svg"
-import gmail from "./assets/gmail.svg"
+import arrowicon from "./assets/subscription-arrow.svg";
+import gmail from "./assets/gmail.svg";
 export default function EmailInput() {
   return (
     <div className="w-full max-w-xl">
       <div className="flex items-center rounded-[14px] bg-white shadow-md px-4 py-2">
         {/* Left icon */}
         <span className="text-gray-400 mr-3">
-          <img src={gmail} alt="" />
+          <img src={gmail} alt="gmail" />
         </span>
 
         {/* Input */}
