@@ -6,6 +6,8 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import ForgotPassword from "../pages/ForgotPassword";
+import ResetEmail from "../pages/ResetEmail";
+import ResetPhone from "../pages/ResetPhone";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +19,8 @@ const AppRoutes = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/resetemail" element={<ResetEmail />} />
+          <Route path="/resetphone" element={<ResetPhone />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -6,8 +6,11 @@ const MainLayout = () => {
   const location = useLocation();
 
   // Hide navbar & footer on login page
-   const hideLayout = location.pathname === "/login" || location.pathname === "/forgotpassword";
-
+  const hideLayout =
+    location.pathname === "/login" ||
+    location.pathname === "/forgotpassword " ||
+    location.pathname === "/resetemail" ||
+    location.pathname === "/resetphone ";
 
   return (
     <>
