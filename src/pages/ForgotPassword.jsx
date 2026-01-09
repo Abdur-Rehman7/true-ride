@@ -1,6 +1,5 @@
 import loginimg from "../assets/login-side-img.png";
 import logo from "../assets/logo.svg";
-import google from "../assets/google-icon.svg";
 import labelIcon from "../assets/required-label-icon.svg";
 import checkIcon from "../assets/correct-icon.svg";
 import { useState } from "react";
@@ -56,7 +55,7 @@ const ForgotPassword = () => {
               Please enter your email to reset the password
             </div>
             <div className="flex justify-between my-2">
-              <div className="flex gap-2">
+              <div className="flex gap-[18px]">
                 <input
                   type="checkbox"
                   checked={resetByEmail}
@@ -69,7 +68,7 @@ const ForgotPassword = () => {
                 <label className="text-[18px]">Reset by E-mail</label>
               </div>
 
-              <div className="flex gap-2">
+              <div className="flex gap-[18px]">
                 <input
                   type="checkbox"
                   checked={resetByPhone}
