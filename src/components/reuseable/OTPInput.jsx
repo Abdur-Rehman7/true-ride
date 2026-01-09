@@ -35,7 +35,7 @@ export default function OTPInput() {
           ref={(el) => (inputsRef.current[index] = el)}
           onChange={(e) => handleChange(e, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
-          className="w-12 h-12 bg-[#F5F5F5] text-center border rounded-md focus:outline-none focus:ring-2 focus:ring-[#9A9FA5] text-lg"
+          className="w-16 h-16 bg-[#F5F5F5] text-center border rounded-md focus:outline-none focus:ring-2 focus:ring-[#9A9FA5] text-[48px] font-semibold"
         />
       ))}
     </div>

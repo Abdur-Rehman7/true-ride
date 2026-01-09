@@ -10,7 +10,8 @@ const MainLayout = () => {
     location.pathname === "/login" ||
     location.pathname === "/forgotpassword" ||
     location.pathname === "/resetemail" ||
-    location.pathname === "/resetphone ";
+    location.pathname === "/resetphone" ||
+    location.pathname === "/passwordreset";
 
   return (
     <>

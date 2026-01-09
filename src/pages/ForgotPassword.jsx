@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 import labelIcon from "../assets/required-label-icon.svg";
 import checkIcon from "../assets/correct-icon.svg";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");

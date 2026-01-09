@@ -1,8 +1,14 @@
 import loginimg from "../assets/login-side-img.png";
 import logo from "../assets/logo.svg";
 import OTPInput from "../components/reuseable/OTPInput";
+import { useNavigate } from "react-router-dom";
 
 const ResetPhone = () => {
+  const navigate = useNavigate();
+
+   const handleSubmit = () => {
+    navigate("/passwordreset");
+  };
   return (
     <>
       <div>
@@ -20,6 +26,7 @@ const ResetPhone = () => {
               <OTPInput />
             </div>
             <button
+            onClick={handleSubmit}
               type="submit"
               className="bg-primary text-[20px] font-semibold w-full py-[10px] px-[30px] rounded-[12px] my-8"
             >
