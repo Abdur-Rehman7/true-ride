@@ -1,7 +1,13 @@
 import loginimg from "../assets/login-side-img.png";
 import logo from "../assets/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const PasswordReset = () => {
+  const navigate = useNavigate();
+
+  const handleContinue = () => {
+    navigate("/updatepassword");
+  };
   return (
     <>
       <div>
@@ -17,7 +23,11 @@ const PasswordReset = () => {
               Your password has been successfully reset. click confirm to set a
               new password
             </p>
-            <button className="bg-primary text-[20px] font-semibold w-full py-[10px] px-[30px] rounded-[12px] my-8">
+            <button
+              onClick={handleContinue}
+              type="submit"
+              className="bg-primary text-[20px] font-semibold w-full py-[10px] px-[30px] rounded-[12px] my-8"
+            >
               Continue
             </button>
           </div>

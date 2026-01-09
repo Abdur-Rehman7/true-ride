@@ -9,6 +9,7 @@ import ForgotPassword from "../pages/ForgotPassword";
 import ResetEmail from "../pages/ResetEmail";
 import ResetPhone from "../pages/ResetPhone";
 import PasswordReset from "../pages/PasswordReset";
+import UpdatePassword from "../pages/UpdatePassword";
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AppRoutes = () => {
           <Route path="/resetemail" element={<ResetEmail />} />
           <Route path="/resetphone" element={<ResetPhone />} />
           <Route path="/passwordreset" element={<PasswordReset />} />
+          <Route path="/updatepassword" element={<UpdatePassword />} />
         </Route>
       </Routes>
     </BrowserRouter>
