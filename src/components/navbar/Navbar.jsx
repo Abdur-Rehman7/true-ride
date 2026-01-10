@@ -2,6 +2,18 @@ import { Link } from "react-router-dom";
 import logo from "./assets/Logo.svg";
 
 const Navbar = () => {
+  const navLinks = [
+    { label: "Home", path: "/" },
+    { label: "Buy A Car", path: "/" },
+    { label: "Sell My Car", path: "/" },
+    { label: "Services & Tools", path: "/" },
+    { label: "Promotions & Specials", path: "/" },
+    { label: "Compare", path: "/" },
+    { label: "Blog", path: "/blog" }, // 👈 Blog route
+    { label: "About", path: "/" },
+    { label: "Contact", path: "/" },
+  ];
+
   return (
     <header className="w-full bg-surface shadow-md">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -12,19 +24,13 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <div className="hidden lg:flex items-center gap-6 text-black">
-          {[
-            "Home",
-            "Buy A Car",
-            "Sell My Car",
-            "Services & Tools",
-            "Promotions & Specials",
-            "Compare",
-            "Blog",
-            "About",
-            "Contact",
-          ].map((item) => (
-            <Link key={item} to="/" className="text-sm font-medium transition">
-              {item}
+          {navLinks.map((item) => (
+            <Link
+              key={item.label}
+              to={item.path}
+              className="text-sm font-medium transition hover:text-primary"
+            >
+              {item.label}
             </Link>
           ))}
         </div>

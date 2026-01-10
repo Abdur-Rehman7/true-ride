@@ -13,6 +13,7 @@ import UpdatePassword from "../pages/UpdatePassword";
 import Signup from "../pages/Signup";
 import CreatePassword from "../pages/CreatePassword";
 import ConfirmPassword from "../pages/ConfirmPassword";
+import Blog from "../pages/Blog";
 
 const AppRoutes = () => {
   return (
@@ -31,6 +32,7 @@ const AppRoutes = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/createpassword" element={<CreatePassword />} />
           <Route path="/confirmpassword" element={<ConfirmPassword />} />
+          <Route path="/blog" element={<Blog />} />
         </Route>
       </Routes>
     </BrowserRouter>
