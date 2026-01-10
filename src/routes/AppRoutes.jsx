@@ -10,7 +10,7 @@ import ResetEmail from "../pages/ResetEmail";
 import ResetPhone from "../pages/ResetPhone";
 import PasswordReset from "../pages/PasswordReset";
 import UpdatePassword from "../pages/UpdatePassword";
-import Signup from "../pages/SignUp";
+import Signup from "../pages/Signup";
 import CreatePassword from "../pages/CreatePassword";
 
 const AppRoutes = () => {
