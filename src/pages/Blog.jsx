@@ -130,7 +130,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center my-4">
+      <div className="flex justify-between items-center my-4 mx-8">
         <div>Showing 12 results</div>
         <div className="flex items-center gap-2">
           <div>Sort by:</div>
@@ -142,7 +142,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 cursor-pointer my-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 cursor-pointer my-8 mx-8">
         {blogs.map((blog) => (
           <div
             key={blog.id}
