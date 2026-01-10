@@ -11,8 +11,10 @@ const MainLayout = () => {
     location.pathname === "/forgotpassword" ||
     location.pathname === "/resetemail" ||
     location.pathname === "/resetphone" ||
-    location.pathname === "/passwordreset" || 
-    location.pathname === "/updatepassword";
+    location.pathname === "/passwordreset" ||
+    location.pathname === "/updatepassword" ||
+    location.pathname === "/signup" ||
+    location.pathname === "/createpassword";
 
   return (
     <>
