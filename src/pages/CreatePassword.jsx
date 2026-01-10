@@ -2,8 +2,14 @@ import loginimg from "../assets/login-side-img.png";
 import logo from "../assets/logo.svg";
 import labelIcon from "../assets/required-label-icon.svg";
 import google from "../assets/google-icon.svg";
+import { useNavigate } from "react-router-dom";
 
 const CreatePassword = () => {
+  const navigate = useNavigate();
+
+  const handleContinue = () => {
+    navigate("/confirmpassword");
+  };
   return (
     <>
       <div>
@@ -74,6 +80,7 @@ const CreatePassword = () => {
               </p>
             </div>
             <button
+              onClick={handleContinue}
               type="submit"
               className="bg-primary text-[20px] font-semibold w-full py-[10px] px-[30px] rounded-[12px] my-4"
             >

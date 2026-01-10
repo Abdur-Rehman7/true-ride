@@ -12,6 +12,7 @@ import PasswordReset from "../pages/PasswordReset";
 import UpdatePassword from "../pages/UpdatePassword";
 import Signup from "../pages/Signup";
 import CreatePassword from "../pages/CreatePassword";
+import ConfirmPassword from "../pages/ConfirmPassword";
 
 const AppRoutes = () => {
   return (
@@ -29,6 +30,7 @@ const AppRoutes = () => {
           <Route path="/updatepassword" element={<UpdatePassword />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/createpassword" element={<CreatePassword />} />
+          <Route path="/confirmpassword" element={<ConfirmPassword />} />
         </Route>
       </Routes>
     </BrowserRouter>
