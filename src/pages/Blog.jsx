@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
 import bgImage from "../assets/blog-bg.jpg";
 import blog1 from "../assets/blog-section-1.jpg";
-import blog2 from "../assets/blog-section-1.svg";
-import blog3 from "../assets/blog-section-2.svg";
+import blog2 from "../assets/blog-section-2.svg";
+import blog3 from "../assets/blog-section-3.svg";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Blog = () => {
+  const navigate = useNavigate();
+
+  const handleBlog = () => {
+    navigate("/blogpost");
+  };
+
   const blogs = [
     {
       id: 1,
@@ -33,7 +40,7 @@ const Blog = () => {
       image: blog3,
     },
     {
-      id: 1,
+      id: 4,
       category: "Cars",
       title: "The Rise of Electric SUVs: Are They Worth the Hype?",
       description:
@@ -41,7 +48,7 @@ const Blog = () => {
       image: blog1,
     },
     {
-      id: 2,
+      id: 5,
       category: "Technology",
       title: "Still the Benchmark for Electric Luxury?",
       description:
@@ -49,7 +56,7 @@ const Blog = () => {
       image: blog2,
     },
     {
-      id: 3,
+      id: 6,
       category: "Update",
       title: "How Culture Shapes Car Design Around the World?",
       description:
@@ -57,7 +64,7 @@ const Blog = () => {
       image: blog3,
     },
     {
-      id: 1,
+      id: 7,
       category: "Cars",
       title: "The Rise of Electric SUVs: Are They Worth the Hype?",
       description:
@@ -65,7 +72,7 @@ const Blog = () => {
       image: blog1,
     },
     {
-      id: 2,
+      id: 8,
       category: "Technology",
       title: "Still the Benchmark for Electric Luxury?",
       description:
@@ -73,7 +80,7 @@ const Blog = () => {
       image: blog2,
     },
     {
-      id: 3,
+      id: 9,
       category: "Update",
       title: "How Culture Shapes Car Design Around the World?",
       description:
@@ -81,7 +88,7 @@ const Blog = () => {
       image: blog3,
     },
     {
-      id: 1,
+      id: 10,
       category: "Cars",
       title: "The Rise of Electric SUVs: Are They Worth the Hype?",
       description:
@@ -89,7 +96,7 @@ const Blog = () => {
       image: blog1,
     },
     {
-      id: 2,
+      id: 11,
       category: "Technology",
       title: "Still the Benchmark for Electric Luxury?",
       description:
@@ -97,7 +104,7 @@ const Blog = () => {
       image: blog2,
     },
     {
-      id: 3,
+      id: 12,
       category: "Update",
       title: "How Culture Shapes Car Design Around the World?",
       description:
@@ -134,7 +141,7 @@ const Blog = () => {
         <div>Showing 12 results</div>
         <div className="flex items-center gap-2">
           <div>Sort by:</div>
-          <select className="border px-2 py-1">
+          <select className="border rounded-[6px] px-2 py-1">
             <option>Newest</option>
             <option>By Category</option>
             <option>Oldest</option>
@@ -145,6 +152,7 @@ const Blog = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 cursor-pointer my-8 mx-8">
         {blogs.map((blog) => (
           <div
+            onClick={handleBlog}
             key={blog.id}
             className="border border-[#E3E3E3] hover:border-transparent hover:shadow-xl rounded-[12px] transition"
           >
@@ -171,7 +179,7 @@ const Blog = () => {
         ))}
       </div>
 
-      <div className="flex justify-between my-4">
+      <div className="flex justify-between my-4 mx-8">
         <div className="flex items-center gap-2">
           <IoArrowBackOutline />
           <p>Previous</p>
@@ -207,10 +215,10 @@ const Blog = () => {
 
       <div className="bg-[#F9F9FB] my-8">
         <div className="py-4 px-4 w-[60%] mx-auto flex flex-col gap-3">
-          <div className="text-[50px] font-semibold">
+          <div className="text-[50px] font-semibold text-center">
             Subscribe Our Newsletter
           </div>
-          <div className="text-[24px] text-[#575757]">
+          <div className="text-[24px] text-[#575757] text-center">
             Subscribe to our newsletter to receive updates on our event, latest
             news, promotions and discounts direct to your inbox.
           </div>
