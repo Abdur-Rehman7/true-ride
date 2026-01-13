@@ -11,7 +11,7 @@ const Navbar = () => {
     { label: "Compare", path: "/" },
     { label: "Blog", path: "/blog" }, // 👈 Blog route
     { label: "About", path: "/about" },
-    { label: "Contact", path: "/" },
+    { label: "Contact", path: "/contact" },
   ];
 
   return (
