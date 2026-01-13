@@ -15,7 +15,7 @@ import CreatePassword from "../pages/CreatePassword";
 import ConfirmPassword from "../pages/ConfirmPassword";
 import Blog from "../pages/Blog";
 import BlogPost from "../pages/BlogPost";
-
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -35,6 +35,7 @@ const AppRoutes = () => {
           <Route path="/confirmpassword" element={<ConfirmPassword />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogpost" element={<BlogPost />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </BrowserRouter>

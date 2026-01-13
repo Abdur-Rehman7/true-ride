@@ -9,7 +9,7 @@ const Navbar = () => {
     { label: "Services & Tools", path: "/" },
     { label: "Promotions & Specials", path: "/" },
     { label: "Compare", path: "/" },
-    { label: "Blog", path: "/blog" }, // 👈 Blog route
+    { label: "Blog", path: "/blog" }, 
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },
   ];

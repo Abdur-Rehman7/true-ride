@@ -9,8 +9,14 @@ import twitter from "./assets/twitter.svg";
 import telegram from "./assets/telegram.svg";
 import { FaFacebookMessenger } from "react-icons/fa6";
 import FotterEmailInput from "./FotterEmailInput";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/privacypolicy");
+  };
   return (
     <>
       <footer className="bg-[#000000]">
@@ -104,7 +110,11 @@ const Footer = () => {
               </div>
 
               <div className="flex gap-2 items-center">
-                <img src={facebook} alt="facebook icon" className="cursor-pointer" />
+                <img
+                  src={facebook}
+                  alt="facebook icon"
+                  className="cursor-pointer"
+                />
                 <img src={twitter} alt="twitter" className="cursor-pointer" />
                 <img src={telegram} alt="telegram" className="cursor-pointer" />
                 <div className="w-[32px] h-[32px] flex items-center justify-center bg-white rounded-full cursor-pointer">
@@ -120,7 +130,14 @@ const Footer = () => {
             </div>
             <div className="flex gap-4 text-white">
               <div>Terms of Use</div>
-              <div>Privacy Policy</div>
+              <div
+                role="link"
+                tabIndex={0}
+                className="cursor-pointer hover:underline"
+                onClick={handleNavigation}
+              >
+                Privacy Policy
+              </div>
               <div>Accessibility Statement</div>
             </div>
           </div>
