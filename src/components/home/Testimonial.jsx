@@ -7,8 +7,10 @@ import PaginationLines from "./PaginationLines";
 const Testimonial = () => {
   return (
     <>
-      <div className="bg-[#1E1D18] my-10 py-8">
-        <div className="text-[44px] text-white text-center font-semibold">Our Happy Customers</div>
+      <div className="bg-[#1E1D18] my-10 py-8 rounded-[24px]">
+        <div className="text-[44px] text-white text-center font-semibold">
+          Our Happy Customers
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 mx-8 my-4 gap-6">
           <TestimonialCard
             image={testimonial1}

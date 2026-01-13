@@ -10,7 +10,7 @@ const Navbar = () => {
     { label: "Promotions & Specials", path: "/" },
     { label: "Compare", path: "/" },
     { label: "Blog", path: "/blog" }, // 👈 Blog route
-    { label: "About", path: "/" },
+    { label: "About", path: "/about" },
     { label: "Contact", path: "/" },
   ];
 
