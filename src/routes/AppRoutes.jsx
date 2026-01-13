@@ -16,6 +16,7 @@ import ConfirmPassword from "../pages/ConfirmPassword";
 import Blog from "../pages/Blog";
 import BlogPost from "../pages/BlogPost";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import TermsAndCondition from "../pages/TermsAndCondition";
 const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -36,6 +37,7 @@ const AppRoutes = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogpost" element={<BlogPost />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/termsandcondition" element={<TermsAndCondition />} />
         </Route>
       </Routes>
     </BrowserRouter>

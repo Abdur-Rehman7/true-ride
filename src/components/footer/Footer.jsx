@@ -14,8 +14,11 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
-  const handleNavigation = () => {
+  const handlePrivacyPolicyNavigation = () => {
     navigate("/privacypolicy");
+  };
+  const handleTermAndConditionNavigation = () => {
+    navigate("/termsandcondition");
   };
   return (
     <>
@@ -129,12 +132,17 @@ const Footer = () => {
               Copyright © True Ride. All rights reserved
             </div>
             <div className="flex gap-4 text-white">
-              <div>Terms of Use</div>
               <div
                 role="link"
                 tabIndex={0}
                 className="cursor-pointer hover:underline"
-                onClick={handleNavigation}
+                onClick={handleTermAndConditionNavigation}
+              >Terms of Use</div>
+              <div
+                role="link"
+                tabIndex={0}
+                className="cursor-pointer hover:underline"
+                onClick={handlePrivacyPolicyNavigation}
               >
                 Privacy Policy
               </div>
