@@ -8,7 +8,7 @@ const Navbar = () => {
     { label: "Sell My Car", path: "/" },
     { label: "Services & Tools", path: "/" },
     { label: "Promotions & Specials", path: "/" },
-    { label: "Compare", path: "/" },
+    { label: "Compare", path: "/compare" },
     { label: "Blog", path: "/blog" }, 
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },

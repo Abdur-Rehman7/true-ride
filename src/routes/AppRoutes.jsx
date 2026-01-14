@@ -17,6 +17,7 @@ import Blog from "../pages/Blog";
 import BlogPost from "../pages/BlogPost";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsAndCondition from "../pages/TermsAndCondition";
+import Compare from "../pages/Compare";
 const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -38,6 +39,7 @@ const AppRoutes = () => {
           <Route path="/blogpost" element={<BlogPost />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/termsandcondition" element={<TermsAndCondition />} />
+          <Route path="/compare" element={<Compare />} />
         </Route>
       </Routes>
     </BrowserRouter>
