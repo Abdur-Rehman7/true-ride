@@ -1,18 +1,29 @@
-import dropdownicon from "./assets/dropdown-icon.svg"
+import dropdownicon from "./assets/dropdown-icon.svg";
 
-const SelectInput = ({ label, htmlFor, options }) => {
+const SelectInput = ({
+  label,
+  htmlFor,
+  options,
+  value,
+  onChange,
+  className = "",
+}) => {
   return (
-    <div className="flex flex-col gap-1">
-      <label
-        htmlFor={htmlFor}
-        className="text-sm font-semibold text-black"
-      >
-        {label}
-      </label>
+    <div className={`flex flex-col gap-1 w-full ${className}`}>
+      {label && (
+        <label
+          htmlFor={htmlFor}
+          className="text-sm font-semibold text-black"
+        >
+          {label}
+        </label>
+      )}
 
-      <div className="relative">
+      <div className="relative w-full">
         <select
           id={htmlFor}
+          value={value}
+          onChange={onChange}
           className="
             h-[48px]
             w-full
@@ -31,6 +42,8 @@ const SelectInput = ({ label, htmlFor, options }) => {
             focus:ring-primary
           "
         >
+          <option value="">Select car</option>
+
           {options.map((option, index) => (
             <option key={index} value={option.value}>
               {option.label}
@@ -39,7 +52,7 @@ const SelectInput = ({ label, htmlFor, options }) => {
         </select>
 
         {/* Custom dropdown arrow */}
-        <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 ">
+        <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2">
           <img src={dropdownicon} alt="dropdown icon" />
         </span>
       </div>
