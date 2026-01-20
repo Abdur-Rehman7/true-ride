@@ -42,7 +42,6 @@ const SelectInput = ({
             focus:ring-primary
           "
         >
-          <option value="">Select car</option>
 
           {options.map((option, index) => (
             <option key={index} value={option.value}>

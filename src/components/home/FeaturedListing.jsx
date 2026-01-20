@@ -5,8 +5,10 @@ import { IoMdArrowForward } from "react-icons/io";
 const FeaturedListing = () => {
   return (
     <>
-      <div>
-        <p className="text-center text-[44px] font-bold">Featured Listing</p>
+      <div className="my-[52px]">
+        <p className="text-center text-[44px] font-bold my-[40px]">
+          Featured Listing
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <FeaturedListingCard />
           <FeaturedListingCard />
@@ -15,7 +17,7 @@ const FeaturedListing = () => {
           <FeaturedListingCard />
           <FeaturedListingCard />
         </div>
-        <div className="flex gap-2 items-center justify-center mt-4">
+        <div className="flex gap-2 items-center justify-center my-[40px]">
           <div className="w-[50px] h-[50px] bg-[#F5F6F7] flex items-center justify-center hover:cursor-pointer rounded-[10px]">
             <IoMdArrowBack className="text-xl text-[#9A9EA7]" size={20} />
           </div>

@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <div className="w-[95%] mx-auto">
+      <div className="w-[95%] mx-auto">
         <SearchFilter />
         <FeaturedListing />
-      </div> */}
+      </div>
       {/* <PopularModelSection />
       <ServicesDetail />
       <SignupSection />
