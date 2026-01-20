@@ -25,7 +25,7 @@ const MainLayout = () => {
         <Outlet />
       </main>
 
-      {!hideLayout && <Footer />}
+      {/* {!hideLayout && <Footer />} */}
     </>
   );
 };
