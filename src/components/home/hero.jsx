@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
 
         {/* Image Section (OVERLAPPING) */}
-        <div className="absolute right-[9%] top-1/2 -translate-y-1/2 z-0">
+        <div className="absolute right-[12%] top-1/2 -translate-y-1/2 z-0">
           <img src={heroimg} alt="Hero" className="w-[120%] max-w-none" />
         </div>
       </div>
