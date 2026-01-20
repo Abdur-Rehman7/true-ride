@@ -15,7 +15,7 @@ const FeaturedListingCard = () => {
   return (
     <>
       <div
-        class="w-[360px] bg-white rounded-2xl border px-[12px] pt-[12px] pb-[24px] border-[#C2C2C2]
+        class="w-[380px] bg-white rounded-2xl border px-[12px] pt-[12px] pb-[24px] border-[#C2C2C2]
             transition-all duration-300 ease-in-out
             hover:shadow-xl hover:border-transparent
             hover:cursor-pointer overflow-hidden"
@@ -51,7 +51,7 @@ const FeaturedListingCard = () => {
           </div>
         </div>
 
-        <div class="p-2">
+        <div class="p-2 my-[12px]">
           <div class="flex items-center text-yellow-400 text-sm px-2">
             <IoStar />
             <IoStar />
