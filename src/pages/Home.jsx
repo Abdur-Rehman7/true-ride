@@ -24,10 +24,10 @@ export default function Home() {
       <FindCar />
       <Testimonial />
       <PopularBrand />
-      {/* <div className="w-[95%] mx-auto">
+      <div className="w-[95%] mx-auto">
         <LatestListing />
       </div>
-      <SubscribeSection />
+      {/* <SubscribeSection />
       <div className="w-[95%] mx-auto">
         <BlogSection />
       </div> */}
