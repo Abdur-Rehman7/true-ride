@@ -28,14 +28,13 @@ const BlogSection = () => {
       image: blog3,
     },
   ];
-
   return (
     <>
-      <div className="my-10">
-        <div className="text-[44px] font-semibold text-center my-10">
+      <div className="mb-[44px]">
+        <div className="text-[44px] font-semibold text-center mb-[40px]">
           Read Our Latest Articles
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 cursor-pointer my-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 cursor-pointer mb-[40px]">
           {blogs.map((blog) => (
             <div
               key={blog.id}
@@ -45,16 +44,16 @@ const BlogSection = () => {
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="rounded-t-lg w-full"
+                className="rounded-t-lg w-full mb-[20px]"
               />
 
               {/* Content */}
               <div className="mx-4 my-4">
-                <div className="inline-block bg-primary text-[13px] font-semibold px-3 py-1 rounded-[4px] mb-[8px]">
+                <div className="inline-block bg-primary text-[13px] font-semibold px-3 py-1 rounded-[4px] mb-[20px]">
                   {blog.category}
                 </div>
 
-                <div className="text-[24px] font-semibold mb-[8px]">
+                <div className="text-[24px] font-semibold mb-[20px]">
                   {blog.title}
                 </div>
 

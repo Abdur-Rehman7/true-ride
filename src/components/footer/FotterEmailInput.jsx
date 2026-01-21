@@ -2,8 +2,8 @@ import { FaEnvelope, FaPaperPlane } from "react-icons/fa";
 
 export default function FotterEmailInput() {
   return (
-    <div className="w-full flex justify-center items-center bg-black py-4">
-      <div className="relative w-[420px]">
+    <div className="w-full flex justify-center items-center bg-black py-0 lg:py-4 md:py-4">
+      <div className="relative w-full">
         {/* Input */}
         <input
           type="email"

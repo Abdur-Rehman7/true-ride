@@ -3,9 +3,9 @@ import img from "./assets/newsletter-img.svg"
 const SubscribeSection = () => {
   return (
     <>
-      <div className="grid grid-cols-2 bg-[#1E1D18] py-8 my-10">
+      <div className="grid grid-cols-2 bg-[#1E1D18] py-8 mb-[44px]">
         <div className="mx-20">
-          <div className="text-[60px] font-semibold text-white mb-8">
+          <div className="text-[60px] font-semibold text-white mb-[36px]">
             Subscribe to Our Newsletter for New Updates
           </div>
           <EmailInput />

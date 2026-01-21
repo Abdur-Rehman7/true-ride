@@ -27,10 +27,10 @@ export default function Home() {
       <div className="w-[95%] mx-auto">
         <LatestListing />
       </div>
-      {/* <SubscribeSection />
+      <SubscribeSection />
       <div className="w-[95%] mx-auto">
         <BlogSection />
-      </div> */}
+      </div>
     </div>
   );
 }
