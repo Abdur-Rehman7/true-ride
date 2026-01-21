@@ -47,7 +47,9 @@ const FeaturedListingCard = () => {
             <div class="w-7 h-7 bg-black text-white rounded-full flex items-center justify-center text-xs cursor-pointer">
               <img src={play} alt="play button" />
             </div>
-            <div class="flex-1 h-1 bg-primary rounded-full"></div>
+            <div class="flex-1 h-1 bg-[#D9D9D9] rounded-full">
+              <div  class="flex-1 h-1 w-[50%] bg-primary rounded-full"></div>
+            </div>
           </div>
         </div>
 
