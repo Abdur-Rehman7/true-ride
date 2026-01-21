@@ -18,8 +18,8 @@ export default function Home() {
         <SearchFilter />
         <FeaturedListing />
       </div>
-      {/* <PopularModelSection />
-      <ServicesDetail />
+      <PopularModelSection />
+      {/* <ServicesDetail />
       <SignupSection />
       <FindCar />
       <Testimonial />

@@ -3,10 +3,16 @@ import { IoMdArrowForward } from "react-icons/io";
 import car1 from "./assets/car-1.svg";
 import car2 from "./assets/car-2.svg";
 import car3 from "./assets/car-3.svg";
+import PopularSectionBg from "./assets/blog-bg.jpg";
 const PopularModelSection = () => {
   return (
     <>
-      <section className="w-full h-auto rounded-lg bg-[#1E1D18] my-10 py-10">
+      <section
+        className="relative w-full h-auto rounded-lg my-10 py-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${PopularSectionBg})` }}
+      >
+        {/* MASK OVERLAY */}
+        <div className="absolute inset-0 bg-black/20 rounded-lg"></div>
         <div className="text-white text-[44px] text-center font-semibold">
           Popular Car Models
         </div>
