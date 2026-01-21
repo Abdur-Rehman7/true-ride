@@ -4,10 +4,15 @@ import testimonial3 from "./assets/testimonial-3.png";
 import comma from "./assets/comma.svg";
 import TestimonialCard from "./TestimonialCard";
 import PaginationLines from "./PaginationLines";
+import Testimonialbg from "./assets/blog-bg.jpg";
 const Testimonial = () => {
   return (
     <>
-      <div className="bg-[#1E1D18] my-10 py-8 rounded-[24px]">
+      <div
+        className="bg-[#1E1D18] my-10 py-8 rounded-[24px]  bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${Testimonialbg})` }}
+      >
+        <div className="absolute inset-0 bg-black/90 rounded-lg"></div>
         <div className="text-[44px] text-white text-center font-semibold">
           Our Happy Customers
         </div>
