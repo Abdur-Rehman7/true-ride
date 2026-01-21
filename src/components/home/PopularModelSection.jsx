@@ -8,7 +8,7 @@ const PopularModelSection = () => {
   return (
     <>
       <section
-        className="relative w-full h-auto rounded-lg my-10 py-10 bg-cover bg-center bg-no-repeat"
+        className="relative w-full h-auto rounded-lg mb-[44px] py-10 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${PopularSectionBg})` }}
       >
         {/* MASK OVERLAY */}

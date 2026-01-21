@@ -11,7 +11,7 @@ const Testimonial = () => {
         <div className="text-[44px] text-white text-center font-semibold">
           Our Happy Customers
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 mx-8 my-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 mx-8 my-[40px] gap-6">
           <TestimonialCard
             image={testimonial1}
             name="Anna Müller"

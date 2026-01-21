@@ -5,7 +5,7 @@ import { IoMdArrowForward } from "react-icons/io";
 const FeaturedListing = () => {
   return (
     <>
-      <div className="my-[52px]">
+      <div className="mb-[44px]">
         <p className="text-center text-[44px] font-bold my-[40px]">
           Featured Listing
         </p>

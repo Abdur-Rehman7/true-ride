@@ -20,10 +20,10 @@ export default function Home() {
       </div>
       <PopularModelSection />
       <ServicesDetail />
-      {/* <SignupSection />
+      <SignupSection />
       <FindCar />
       <Testimonial />
-      <PopularBrand /> */}
+      {/* <PopularBrand /> */}
       {/* <div className="w-[95%] mx-auto">
         <LatestListing />
       </div>
