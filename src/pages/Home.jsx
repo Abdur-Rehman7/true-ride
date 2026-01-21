@@ -23,7 +23,7 @@ export default function Home() {
       <SignupSection />
       <FindCar />
       <Testimonial />
-      {/* <PopularBrand /> */}
+      <PopularBrand />
       {/* <div className="w-[95%] mx-auto">
         <LatestListing />
       </div>

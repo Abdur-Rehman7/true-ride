@@ -13,7 +13,7 @@ const PopularBrand = () => {
   return (
     <>
       <div>
-        <div className="text-[44px] text-black text-center font-semibold">
+        <div className="text-[44px] text-black text-center font-semibold mb-[40px]">
           Popular Brands
         </div>
         <div className="flex justify-between my-6">
