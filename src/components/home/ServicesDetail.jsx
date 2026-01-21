@@ -3,6 +3,35 @@ import quality from "./assets/quality.svg";
 import exclusive from "./assets/exclusive.svg";
 import transaction from "./assets/transaction.svg";
 const ServicesDetail = () => {
+  const stats = [
+    { value: "124k+", label: "Active Users" },
+    { value: "12k+", label: "Good Reviews" },
+    { value: "32k+", label: "Car Available" },
+  ];
+
+  const features = [
+    {
+      img: quality,
+      alt: "quality",
+      title: "Quality Choice",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.",
+    },
+    {
+      img: exclusive,
+      alt: "exclusive",
+      title: "Exclusive Service",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.",
+    },
+    {
+      img: transaction,
+      alt: "transaction",
+      title: "Fast Transaction",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.",
+    },
+  ];
   return (
     <>
       <section>
@@ -23,59 +52,39 @@ const ServicesDetail = () => {
               </button>
             </div>
             <div className="relative">
-              <div className="absolute top-14 ">
+              <div className="absolute top-14 right-20 ">
                 <Accordion />
               </div>
             </div>
           </div>
         </div>
 
-        <div className=" grid grid-cols-3 w-[45%] gap-2 mt-4 ml-6">
-          <div className="text-center  bg-[#FAFAFA] rounded-[8px] ">
-            <p className="text-[40px] font-semibold">124k+</p>
-            <p className="text-[14px] text-[#9C9C9C]">Active Users</p>
-          </div>
-          <div className="text-center bg-[#FAFAFA] rounded-[8px]">
-            <p className="text-[40px] font-semibold">12k+</p>
-            <p className="text-[14px] text-[#9C9C9C]">Good Reviews</p>
-          </div>
-          <div className="text-center bg-[#FAFAFA] rounded-[8px]">
-            <p className="text-[40px] font-semibold">32k+</p>
-            <p className="text-[14px] text-[#9C9C9C]">Car Available</p>
-          </div>
+        <div className="grid grid-cols-6 gap-[24px] mt-4 ml-6">
+          {stats.map((item, index) => (
+            <div
+              key={index}
+              className="text-center bg-[#FAFAFA] rounded-[8px] py-[17px] px-[48px]"
+            >
+              <p className="text-[40px] font-semibold">{item.value}</p>
+              <p className="text-[14px] text-[#9C9C9C]">{item.label}</p>
+            </div>
+          ))}
         </div>
 
-        <div className="grid grid-cols-3 bg-[#FAFAFA] mt-14 p-10">
-          <div className="flex gap-1">
-            <img src={quality} alt="quality" className="w-[50px] h-[50px]" />
-            <div className="gap-2">
-              <p className="text-[18px] font-semibold">Quality Choice</p>
-              <p className="text-[13px] text-[#9C9C9C]">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has.
-              </p>
+        <div className="grid grid-cols-3 gap-[24px] bg-[#FAFAFA] mt-14 p-10">
+          {features.map((item, index) => (
+            <div key={index} className="flex gap-[12px]">
+              <img
+                src={item.img}
+                alt={item.alt}
+                className="w-[50px] h-[50px]"
+              />
+              <div className="flex flex-col gap-[6px]">
+                <p className="text-[18px] font-semibold">{item.title}</p>
+                <p className="text-[13px] text-[#9C9C9C]">{item.description}</p>
+              </div>
             </div>
-          </div>
-          <div className="flex gap-1">
-            <img src={exclusive} alt="exclusive" className="w-[50px] h-[50px]" />
-            <div className="gap-2">
-              <p className="text-[18px] font-semibold">Quality Choice</p>
-              <p className="text-[13px] text-[#9C9C9C]">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-1">
-            <img src={transaction} alt="transaction" className="w-[50px] h-[50px]" />
-            <div className="gap-2">
-              <p className="text-[18px] font-semibold">Quality Choice</p>
-              <p className="text-[13px] text-[#9C9C9C]">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </>

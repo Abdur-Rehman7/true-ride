@@ -19,8 +19,8 @@ export default function Home() {
         <FeaturedListing />
       </div>
       <PopularModelSection />
-      {/* <ServicesDetail />
-      <SignupSection />
+      <ServicesDetail />
+      {/* <SignupSection />
       <FindCar />
       <Testimonial />
       <PopularBrand /> */}
