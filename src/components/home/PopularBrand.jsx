@@ -12,7 +12,7 @@ import logo11 from "./assets/brand-logo-11.svg";
 const PopularBrand = () => {
   return (
     <>
-      <div>
+      <div className="mb-[44px]">
         <div className="text-[44px] text-black text-center font-semibold mb-[40px]">
           Popular Brands
         </div>
