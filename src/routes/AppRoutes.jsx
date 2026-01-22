@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -18,6 +17,8 @@ import BlogPost from "../pages/BlogPost";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsAndCondition from "../pages/TermsAndCondition";
 import Compare from "../pages/Compare";
+import BuyCar from "../pages/BuyCar";
+
 const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -40,6 +41,7 @@ const AppRoutes = () => {
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/termsandcondition" element={<TermsAndCondition />} />
           <Route path="/compare" element={<Compare />} />
+          <Route path="/buycar" element={<BuyCar />} />
         </Route>
       </Routes>
     </BrowserRouter>

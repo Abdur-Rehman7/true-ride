@@ -4,7 +4,7 @@ import logo from "./assets/Logo.svg";
 const Navbar = () => {
   const navLinks = [
     { label: "Home", path: "/" },
-    { label: "Buy A Car", path: "/" },
+    { label: "Buy A Car", path: "/buycar" },
     { label: "Sell My Car", path: "/" },
     { label: "Services & Tools", path: "/" },
     { label: "Promotions & Specials", path: "/" },
