@@ -6,7 +6,12 @@ import FilterCheckBox from "../components/reuseable/FilterCheckBox";
 import line from "../assets/year-between-line.svg";
 import PriceFilter from "../components/reuseable/PriceFilter";
 import ToggleButton from "../components/reuseable/ToggleButton";
+import sorticon from "../assets/sorting-icon.svg";
+import caricon from "../assets/car-icon.svg";
 import { useState } from "react";
+import FeaturedListingCard from "../components/home/FeaturedListingCard";
+import { IoArrowBackOutline } from "react-icons/io5";
+import { IoArrowForwardOutline } from "react-icons/io5";
 const BuyCar = () => {
   const [isCompareView, setIsCompareView] = useState(false);
   const [bodyTypes, setBodyTypes] = useState(["Crossover"]);
@@ -112,9 +117,9 @@ const BuyCar = () => {
 
         <div className="flex items-center justify-center ">
           {/* Outer container */}
-          <div className="w-full rounded-xl border border-black gap-4 flex overflow-hidden shadow-2xl">
+          <div className="w-full mt-4 gap-4 flex overflow-hidden shadow-2xl">
             {/* Sidebar */}
-            <aside className="w-72 border">
+            <aside className="w-72 border self-start rounded-[10px]">
               <div className="flex justify-between p-4 border-b">
                 <button className="py-[8px] px-[16px] text-[16px] text-black bg-[#F2F2F2] rounded-[8px]">
                   Buy New
@@ -186,7 +191,7 @@ const BuyCar = () => {
                 </div>
 
                 <div className="p-4 mb-[32px]">
-                  <div className="mb-[16px] text-[18px] font-semibold">
+                  <div className="mb-[24px] text-[18px] font-semibold">
                     Price
                   </div>
                   <div>
@@ -276,7 +281,74 @@ const BuyCar = () => {
             </aside>
 
             {/* Main content */}
-            <main className="flex-1 p-6 border"></main>
+            <main className="flex-1 p-4">
+              <div className="text-[40px] font-bold">Used Cars</div>
+
+              <div className="flex justify-between items-center border-b py-4">
+                <div className="flex items-center gap-[12px]">
+                  <div className="flex">
+                    <img src={sorticon} alt="" />
+                    Sort by:
+                  </div>
+                  <select className="border rounded-[6px] px-2 py-1">
+                    <option>Newest</option>
+                    <option>By Category</option>
+                    <option>Oldest</option>
+                  </select>
+                </div>
+                <div className="flex gap-2">
+                  <img src={caricon} alt="" />
+                  249 Offers
+                </div>
+              </div>
+
+              <div className="grid grid-cols-[auto_1fr] gap-[20px] my-4 mx-auto">
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+                <FeaturedListingCard />
+              </div>
+
+              <div className="flex justify-between my-4 mx-8 border-t py-4">
+                <div className="flex items-center gap-2">
+                  <IoArrowBackOutline />
+                  <p>Previous</p>
+                </div>
+                <div className="flex gap-1">
+                  <div className="bg-primary w-[40px] h-[40px] rounded-full flex items-center justify-center text-black font-semibold">
+                    1
+                  </div>
+                  <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-black font-semibold">
+                    2
+                  </div>
+                  <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-black font-semibold">
+                    3
+                  </div>
+                  <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-black font-semibold">
+                    ...
+                  </div>
+                  <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-black font-semibold">
+                    8
+                  </div>
+                  <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-black font-semibold">
+                    9
+                  </div>
+                  <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-black font-semibold">
+                    10
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <p>Next</p>
+                  <IoArrowForwardOutline />
+                </div>
+              </div>
+            </main>
           </div>
         </div>
       </div>
