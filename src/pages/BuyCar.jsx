@@ -2,7 +2,20 @@ import { Link } from "react-router-dom";
 import bgImage from "../assets/blog-bg.jpg";
 import removeicon from "../assets/filter-remove-icon.svg";
 import SelectInput from "../components/reuseable/SelectInput";
+import FilterCheckBox from "../components/reuseable/FilterCheckBox";
+import line from "../assets/year-between-line.svg";
+import PriceFilter from "../components/reuseable/PriceFilter";
+import ToggleButton from "../components/reuseable/ToggleButton";
+import { useState } from "react";
 const BuyCar = () => {
+  const [isCompareView, setIsCompareView] = useState(false);
+  const [bodyTypes, setBodyTypes] = useState(["Crossover"]);
+  const [driveTypes, setDriveTypes] = useState([""]);
+  const [fuelTypes, setFuelTypes] = useState([""]);
+  const [transmission, setTransmission] = useState([""]);
+  const [color, setColor] = useState([""]);
+  const [sellers, setSellers] = useState([""]);
+
   const filters = [
     "$10,000 – $50,000",
     "Crossover",
@@ -10,13 +23,66 @@ const BuyCar = () => {
     "Gray",
     "Under 2019",
   ];
-
   const locationOption = [
     { value: "", label: "Choose location" },
     { value: "pakistan", label: "Pakistan" },
     { value: "southafrica", label: "South Africa" },
     { value: "uae", label: "UAE" },
   ];
+  const makeOption = [
+    { value: "", label: "Any make" },
+    { value: "pakistan", label: "Pakistan" },
+    { value: "southafrica", label: "South Africa" },
+    { value: "uae", label: "UAE" },
+  ];
+  const modelOption = [
+    { value: "", label: "Any model" },
+    { value: "pakistan", label: "Pakistan" },
+    { value: "southafrica", label: "South Africa" },
+    { value: "uae", label: "UAE" },
+  ];
+  const allYearOption = [
+    { value: "", label: "All" },
+    { value: "pakistan", label: "2016" },
+    { value: "southafrica", label: "2017" },
+    { value: "uae", label: "2018" },
+  ];
+  const selectYearOption = [
+    { value: "", label: "2019" },
+    { value: "pakistan", label: "2019" },
+    { value: "southafrica", label: "2020" },
+    { value: "uae", label: "2021" },
+    { value: "pakistan", label: "2022" },
+    { value: "southafrica", label: "2023" },
+    { value: "uae", label: "2024" },
+    { value: "uae", label: "2025" },
+    { value: "uae", label: "2026" },
+  ];
+  const mileageOption = [
+    { value: "", label: "Any make" },
+    { value: "pakistan", label: "Pakistan" },
+    { value: "southafrica", label: "South Africa" },
+    { value: "uae", label: "UAE" },
+  ];
+
+  const BODY_TYPES = ["Sedan", "SUV", "Wagon", "Crossover", "Coupe", "Pickup"];
+  const Drive_TYPES = ["AWD/4WD", "Front Wheel Drive", "Rear Wheel Drive"];
+  const Fuel_TYPES = [
+    "Diesel",
+    "Electric",
+    "Gasoline",
+    "Hybrid",
+    "Hydrogen",
+    "Plug-in Hybrid",
+  ];
+  const Transmission = [
+    "Automatic",
+    "Manual 5 Speed",
+    "Manual 6 Speed",
+    "Manual 7 Speed",
+  ];
+  const Color = ["Black", "Blue", "Brown", "Gold", "Gray", "Green"];
+  const Sellers = ["Dealers Only ", "Private Sellers Only"];
 
   return (
     <>
@@ -80,13 +146,131 @@ const BuyCar = () => {
                   ))}
                 </div>
 
-                <div className="p-4">
+                <div className="p-4 mb-[32px]">
                   <div className="text-[18px] font-semibold mb-4">Location</div>
                   <SelectInput htmlFor="Type" options={locationOption} />
                 </div>
 
+                <div className="p-4 mb-[32px]">
+                  <div className="text-[18px] font-semibold mb-[12px]">
+                    Body Type
+                  </div>
+                  <div>
+                    <FilterCheckBox
+                      options={BODY_TYPES}
+                      value={bodyTypes}
+                      onChange={setBodyTypes}
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="mb-[12px] text-[18px] font-semibold">
+                    Make & Model
+                  </div>
+                  <div className="flex flex-col gap-[8px]">
+                    <SelectInput htmlFor="Type" options={makeOption} />
+                    <SelectInput htmlFor="Type" options={modelOption} />
+                  </div>
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="mb-[12px] text-[18px] font-semibold">
+                    Year
+                  </div>
+                  <div className="flex gap-[8px]">
+                    <SelectInput htmlFor="Type" options={allYearOption} />
+                    <img src={line} alt="" />
+                    <SelectInput htmlFor="Type" options={selectYearOption} />
+                  </div>
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="mb-[16px] text-[18px] font-semibold">
+                    Price
+                  </div>
+                  <div>
+                    <PriceFilter />
+                    <div className="flex gap-4 mt-[12px]">
+                      <ToggleButton
+                        isActive={isCompareView}
+                        onToggle={() => setIsCompareView(!isCompareView)}
+                      />
+                      <div className="text-[14px] text-[#828282]">
+                        Negotiated price
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="text-[18px] font-semibold mb-[12px]">
+                    Drive Type
+                  </div>
+                  <div>
+                    <FilterCheckBox
+                      options={Drive_TYPES}
+                      value={driveTypes}
+                      onChange={setDriveTypes}
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="text-[18px] font-semibold mb-[12px]">
+                    Fuel Type
+                  </div>
+                  <div>
+                    <FilterCheckBox
+                      options={Fuel_TYPES}
+                      value={fuelTypes}
+                      onChange={setFuelTypes}
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="text-[18px] font-semibold mb-[12px]">
+                    Transmission
+                  </div>
+                  <div>
+                    <FilterCheckBox
+                      options={Transmission}
+                      value={transmission}
+                      onChange={setTransmission}
+                    />
+                  </div>
+                </div>
+
                 <div className="p-4">
-                    <div className="text-[18px] font-semibold">Body Type</div>
+                  <div className="text-[18px] font-semibold mb-4">Mileage</div>
+                  <SelectInput htmlFor="Type" options={mileageOption} />
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="text-[18px] font-semibold mb-[12px]">
+                    Color
+                  </div>
+                  <div>
+                    <FilterCheckBox
+                      options={Color}
+                      value={color}
+                      onChange={setColor}
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 mb-[32px]">
+                  <div className="text-[18px] font-semibold mb-[12px]">
+                    Sellers
+                  </div>
+                  <div>
+                    <FilterCheckBox
+                      options={Sellers}
+                      value={sellers}
+                      onChange={setSellers}
+                    />
+                  </div>
                 </div>
               </div>
             </aside>
