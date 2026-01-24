@@ -18,6 +18,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsAndCondition from "../pages/TermsAndCondition";
 import Compare from "../pages/Compare";
 import BuyCar from "../pages/BuyCar";
+import CardDetail from "../pages/CardDetail";
 
 const AppRoutes = () => {
   return (
@@ -42,6 +43,7 @@ const AppRoutes = () => {
           <Route path="/termsandcondition" element={<TermsAndCondition />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/buycar" element={<BuyCar />} />
+          <Route path="/carddetail" element={<CardDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
