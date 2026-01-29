@@ -193,7 +193,7 @@ const CardDetail = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-4 mb-[20px]">
-          <div className="col-span-2 border">
+          <div className="col-span-2">
             <div>
               <div>$165,000</div>
               <div className="flex justify-between">
