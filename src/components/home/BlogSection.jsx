@@ -34,7 +34,7 @@ const BlogSection = () => {
         <div className="text-[44px] font-semibold text-center mb-[40px]">
           Read Our Latest Articles
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 cursor-pointer mb-[40px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 cursor-pointer my-[40px]">
           {blogs.map((blog) => (
             <div
               key={blog.id}

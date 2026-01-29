@@ -7,7 +7,7 @@ const FindCar = () => {
   return (
     <>
       <div className="mb-[44px]">
-        <div className="text-[44px] font-bold text-center mb-[32px]">
+        <div className="text-[44px] font-bold text-center mb-[40px]">
           Find car by model
         </div>
         <div className="grid grid-cols-4 mb-[32px]">

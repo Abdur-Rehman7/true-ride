@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 import logo from "./assets/Logo.svg";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const navLinks = [
     { label: "Home", path: "/" },
     { label: "Buy A Car", path: "/buycar" },
-    { label: "Sell My Car", path: "/" },
-    { label: "Services & Tools", path: "/" },
+    { label: "Sell My Car", path: "/sellmycar" },
+    { label: "Services & Tools", path: "/", hasIcon: true },
     { label: "Promotions & Specials", path: "/" },
     { label: "Compare", path: "/compare" },
-    { label: "Blog", path: "/blog" }, 
-    { label: "About", path: "/about" },
+    { label: "Blog", path: "/blog" },
+    { label: "About", path: "/about", hasIcon: true },
     { label: "Contact", path: "/contact" },
   ];
 
@@ -28,9 +29,12 @@ const Navbar = () => {
             <Link
               key={item.label}
               to={item.path}
-              className="text-sm font-medium transition hover:text-primary"
+              className="flex items-center gap-1 text-sm font-medium transition hover:text-primary"
             >
               {item.label}
+              {item.hasIcon && (
+                <MdOutlineKeyboardArrowDown className="text-lg" />
+              )}
             </Link>
           ))}
         </div>

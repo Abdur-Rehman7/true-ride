@@ -19,6 +19,7 @@ import TermsAndCondition from "../pages/TermsAndCondition";
 import Compare from "../pages/Compare";
 import BuyCar from "../pages/BuyCar";
 import CardDetail from "../pages/CardDetail";
+import SellMyCar from "../pages/SellMyCar";
 
 const AppRoutes = () => {
   return (
@@ -44,6 +45,7 @@ const AppRoutes = () => {
           <Route path="/compare" element={<Compare />} />
           <Route path="/buycar" element={<BuyCar />} />
           <Route path="/carddetail" element={<CardDetail />} />
+          <Route path="/sellmycar" element={<SellMyCar />} />
         </Route>
       </Routes>
     </BrowserRouter>

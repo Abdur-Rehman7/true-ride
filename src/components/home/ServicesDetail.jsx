@@ -34,8 +34,8 @@ const ServicesDetail = () => {
   ];
   return (
     <>
-      <section>
-        <div className="bg-primary w-full h-[416px] rounded-lg mb-[44px]">
+      <section className="mb-[44px]">
+        <div className="bg-primary w-full h-[416px] rounded-lg ">
           <div className="grid grid-cols-2">
             <div className="m-6 ">
               <div className="text-[60px] font-bold">
