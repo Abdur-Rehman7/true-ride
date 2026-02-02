@@ -15,7 +15,7 @@ const FeaturedListingCard = () => {
   return (
     <>
       <div
-        class="w-[380px] bg-white rounded-2xl border px-[12px] pt-[12px] pb-[24px] border-[#C2C2C2]
+        class="w-[320px] bg-white rounded-2xl border px-[12px] pt-[12px] pb-[24px] border-[#C2C2C2]
             transition-all duration-300 ease-in-out
             hover:shadow-xl hover:border-transparent
             hover:cursor-pointer overflow-hidden"
@@ -72,7 +72,7 @@ const FeaturedListingCard = () => {
             Johannesburg
           </p>
 
-          <div className="grid grid-cols-3 gap-2 text-gray-600 my-3 py-3 border-t border-b place-items-center">
+          <div className="grid grid-cols-3 gap-1 text-gray-600 my-3 py-3 border-t border-b place-items-center">
             <span className="flex items-center justify-center gap-2 text-[#232323] text-[18px]">
               <img src={diesel} alt="diesel" />
               Diesel
