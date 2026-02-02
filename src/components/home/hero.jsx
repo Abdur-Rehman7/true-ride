@@ -3,7 +3,7 @@ import heroimg from "./assets/hero-img.svg";
 const Hero = () => {
   return (
     <section className="relative h-[600px] p-4 w-full bg-black overflow-hidden">
-      <div className="w-[80%] mx-auto h-full flex items-center relative">
+      <div className="w-[85%] mx-auto h-full flex items-center relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center w-full relative z-10">
           {/* Text Section */}
           <div className="max-w-xl">
